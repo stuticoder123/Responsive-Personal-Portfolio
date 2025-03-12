@@ -73,5 +73,8 @@ body {
 .home-image img {
   width: 80%; /* Adjust the width as needed */
   max-width: 500px; /* Limit the maximum width */
-  border-radius: 10px; /* Optional: add rounded corners to the image */
+  border-radius: 50%; /* Optional: add rounded corners to the image */
+  border:10px solid white;
+  outline:10px solid #0ef;
+  box-shadow:1px 1px 2px white;
 }
