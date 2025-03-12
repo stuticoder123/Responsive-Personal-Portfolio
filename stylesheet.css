@@ -109,8 +109,8 @@ body {
 
 /* Profile Image - Consistent shadow and perfect circle */
 .home-image img {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   max-width: 450px; /* Maximum width to avoid oversizing */
   aspect-ratio: 1; /* Ensures aspect ratio stays square (perfect circle) */
   border-radius: 50%; /* This will ensure it's circular */
