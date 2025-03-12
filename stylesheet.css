@@ -195,8 +195,9 @@ body {
 }
 
 #typed-output {
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: #333;
+    color: #ff6347; /* Customize this to your preferred color */
+    font-weight: bold; /* Adjust font weight */
+    font-size: 1.5em; /* Adjust font size if necessary */
+     font-family: Arial, sans-serif;
     padding: 20px;
 }
