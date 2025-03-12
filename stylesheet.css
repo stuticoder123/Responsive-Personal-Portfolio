@@ -64,15 +64,14 @@ body {
 }
 
 .home-content h3 {
-  font-size: 36px; /* Increase the font size */
+  font-size: 72px; /* Double the font size */
   font-weight: 400; /* Use a normal font weight */
-  color: #0ef; /* Vibrant color */
+  color: #66f2ff; /* Lighter cyan color */
   letter-spacing: 1px; /* Add slight spacing between letters */
   font-family: 'Dancing Script', cursive; /* Use a cursive font for a handwritten effect */
   text-align: center; /* Center the text */
   margin-bottom: 20px; /* Add some spacing below */
 }
-
 
 .home-image {
   flex: 1; /* Makes the image section take up available space */
