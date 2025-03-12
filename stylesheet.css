@@ -68,6 +68,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(15px); /* Shift the image 15px to the right */
 }
 
 .home-image img {
@@ -80,5 +81,4 @@ body {
   outline: 10px solid #0ef; /* Outline around the image */
   box-shadow: 1px 1px 2px white; /* Shadow effect around the image */
   object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
-  transform: translateX(15px); /* Shift the image 15px to the right */
 }
