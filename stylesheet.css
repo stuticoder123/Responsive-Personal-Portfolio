@@ -48,27 +48,35 @@ z-index : 100;
   justify-content: space-between; /* Pushes text left & image right */
   padding: 0 10%; /* Adds space on both sides */
 }
+
 .home-content {
   flex: 1; /* Takes available space */
   max-width: 50%; /* Limits width */
   color: white;
 }
+
 .home-content h1 {
   font-size: 3rem;
 }
+
 .home-content p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
 .home-image {
   flex: 1; /* Takes available space */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .home-image img {
-  width: 300px; /* Adjust size as needed */
-  height: 300px;
+  width: 80%; /* Adjusts size to take up remaining space */
+  max-width: 350px; /* Prevents excessive stretching */
   border-radius: 50%; /* Makes it circular */
   object-fit: cover; /* Ensures image fits well */
-  border: 5px solid white; /* Optional: Adds a white border */
+  border: 10px solid white; /* Outer white border */
+  outline: 10px solid #0ef; /* Middle neon border */
+  box-shadow: 0 0 0 10px white; /* Inner-most white border */
 }
