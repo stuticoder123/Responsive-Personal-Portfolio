@@ -97,7 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateX(25px); /* Shift the image 25px to the right */
-  filter: drop-shadow(50px 50px 45px rgba(50, 50, 112, 0.6)); /* Soft shadow effect */
+  filter: drop-shadow(250px 250px 245px rgba(50, 50, 112, 0.6)); /* Soft shadow effect */
 }
 
 .home-image img {
