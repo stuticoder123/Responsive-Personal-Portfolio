@@ -73,8 +73,8 @@ body {
 .home-image img {
   width: 80%; /* Adjust the width as needed */
   max-width: 450px; /* Limit the maximum width */
-  height: 0; /* Remove the default height */
-  padding-top: 80%; /* Make the height equal to the width to keep it square */
+  height: auto; /* Allow the height to auto adjust */
+  aspect-ratio: 1; /* Ensure the aspect ratio is 1:1 (square) */
   border-radius: 50%; /* Make the image circular */
   border: 10px solid white; /* Border around the image */
   outline: 10px solid #0ef; /* Outline around the image */
