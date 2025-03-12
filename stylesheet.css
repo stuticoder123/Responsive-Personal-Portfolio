@@ -1,57 +1,63 @@
 * {
-  margin : 0;
-  padding : 0;
-  box-sizing : border-box;
-  font-family : 'poppins' , sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-  color : #ededed;
+  color: #ededed;
 }
-.header { 
-position : fixed;
-top : 0;
-left : 0;
-width : 100%;
-padding : 20px 10%;
-background : transparent;
-display : flex;
-justify-content : space-between;
-align-items : center;
-z-index : 100;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
+
 .logo {
-  position : relative;
-  font-size : 25px;
-  color : #fff;
-  text-decoration : none;
-  font-weight : 600;
-  }
-  .navbar a{
-    display : inline-block;
-    font-size : 25px;
-    color : #fff;
-    text-decoration : none;
-    font-weight : 500;
-    margin-left : 35px;
-    transition : .3s;
-  }
-  .navbar a:hover{
-    color : #0ef;
-  }
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
 .home {
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: rgb(2, 2, 62);
-  display: flex; /* Enables row alignment */
-  align-items: center; /* Centers content vertically */
-  justify-content: space-between; /* Pushes text left & image right */
-  padding: 0 10%; /* Adds space on both sides */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
 .home-content {
-  flex: 1; /* Takes available space */
-  max-width: 50%; /* Limits width */
+  flex: 1;
+  max-width: 50%;
   color: white;
 }
 
@@ -65,18 +71,18 @@ z-index : 100;
 }
 
 .home-image {
-  flex: 1; /* Takes available space */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .home-image img {
-  width: 80%; /* Adjusts size to take up remaining space */
-  max-width: 350px; /* Prevents excessive stretching */
-  border-radius: 50%; /* Makes it circular */
-  object-fit: cover; /* Ensures image fits well */
-  border: 10px solid white; /* Outer white border */
-  outline: 10px solid #0ef; /* Middle neon border */
-  box-shadow: 0 0 0 10px white; /* Inner-most white border */
+  width: 80%;
+  max-width: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid white;
+  outline: 10px solid #0ef;
+  box-shadow: 0 0 0 10px white;
 }
