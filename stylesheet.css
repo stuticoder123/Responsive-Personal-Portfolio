@@ -63,6 +63,14 @@ body {
   padding-right: 20px;
 }
 
+.home-content h1 {
+  font-size:72px;
+  font:cursive; /* Apply the desired font styles */
+  color: white; /* Lighter cyan color (optional) */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some spacing below */
+}
+
 .home-content h3 {
   font-size: 40px; /* font size */
   font-weight: 200; /* Use a normal font weight */
@@ -73,12 +81,14 @@ body {
   margin-bottom: 50px; /* Add some spacing below */
 }
 
-.home-content h1 {
-  font-size:72px;
-  font:cursive; /* Apply the desired font styles */
-  color: white; /* Lighter cyan color (optional) */
+.home-content p {
+  font-size: 20px; /* Adjusted for readability */
+  font-weight: 400; /* Normal weight for a softer look */
+  color: #99e6ff; /* Lighter shade of cyan blue */
+  font-family: 'Dancing Script', cursive; /* Cursive font style */
   text-align: center; /* Center the text */
-  margin-bottom: 20px; /* Add some spacing below */
+  line-height: 1.6; /* Improve readability */
+  margin-top: 10px; /* Add some spacing from the element above */
 }
 
 .home-image {
