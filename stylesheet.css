@@ -52,6 +52,7 @@ body {
   justify-content: space-between;
   min-height: 100vh; /* Allow for content overflow */
   background: url(Purple Illustrated Mountain Desktop Wallpaper.png) no-repeat;
+  background-color:rgb(2,2,62);
   background-size: cover;
   background-position: center;
   display: flex;
