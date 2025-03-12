@@ -44,4 +44,5 @@ z-index : 100;
   justify-content : space-between;
   height : 100vh;
   background-color : rgb(2,2,62);
+  background-size : cover;
 }
