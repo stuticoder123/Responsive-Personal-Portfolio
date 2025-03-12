@@ -113,7 +113,7 @@ body {
   border-radius: 50%;
   border: 10px solid white;
   outline: 10px solid #0ef;
-  box-shadow: 0 0 20px rgba(50, 50, 112, 1); /* Always visible shadow */
+  box-shadow: 0 0 20px rgba(50, 50, 112, 1);
   object-fit: cover;
   animation: pulse-shadow 1.5s infinite alternate ease-in-out;
 }
@@ -171,7 +171,6 @@ body {
   gap: 15px;
 }
 
-/* Social Media Icons (Hover Effect Remains) */
 .home-sci a {
   display: flex;
   justify-content: center;
@@ -184,11 +183,11 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Light initial shadow */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
 .home-sci a:hover {
   background: #0ef;
   color: black;
-  box-shadow: 0 0 15px #0ef; /* Stronger shadow on hover */
+  box-shadow: 0 0 15px #0ef;
 }
