@@ -73,8 +73,11 @@ body {
 .home-image img {
   width: 80%; /* Adjust the width as needed */
   max-width: 450px; /* Limit the maximum width */
-  border-radius: 50%; /* Optional: add rounded corners to the image */
-  border:10px solid white;
-  outline:10px solid #0ef;
-  box-shadow:1px 1px 2px white;
+  height: 0; /* Remove the default height */
+  padding-top: 80%; /* Make the height equal to the width to keep it square */
+  border-radius: 50%; /* Make the image circular */
+  border: 10px solid white; /* Border around the image */
+  outline: 10px solid #0ef; /* Outline around the image */
+  box-shadow: 1px 1px 2px white; /* Shadow effect around the image */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
 }
