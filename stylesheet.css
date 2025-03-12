@@ -113,11 +113,18 @@ body {
   object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
 }
 
-.home-buttons {
-    margin-top: 20px;
+.home-content {
+    text-align: center; /* Centers the text and buttons */
 }
 
-.btn {
+.home-buttons { /* Center the buttons */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Aligns buttons in the center */
+    gap: 20px; /* Adds spacing between buttons */
+}
+
+.btn { /* Style for buttons */
     display: inline-block;
     padding: 12px 24px;
     font-size: 18px;
@@ -127,7 +134,6 @@ body {
     border-radius: 8px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    margin-right: 15px;
 }
 
 .btn:hover {
@@ -142,3 +148,25 @@ body {
     background: #ff1a1a;
 }
 
+.home-sci { /* Social Media Icons - Centered */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Aligns icons in the center */
+    gap: 15px; /* Adds space between icons */
+}
+
+.home-sci a {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1); /* Light background effect */
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: black;
+}
