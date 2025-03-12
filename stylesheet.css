@@ -113,6 +113,41 @@ body {
   object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
 }
 
+/* Image container with animation */
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(25px); /* Moves image slightly to the right */
+    position: relative;
+}
+
+/* Circular image with border and animated shadow */
+.home-image img {
+    width: 80%; /* Adjust width */
+    max-width: 450px; /* Limit max width */
+    border-radius: 50%;
+    border: 10px solid white;
+    outline: 10px solid #0ef;
+    box-shadow: 0 0 25px rgba(50, 50, 112, 0.8); /* Stronger shadow for visibility */
+    animation: pulse-shadow 1.5s infinite ease-in-out; /* Pulsating animation */
+}
+
+/* Pulsating Animation */
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 25px rgba(50, 50, 112, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(50, 50, 112, 1); /* Shadow expands */
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(50, 50, 112, 0.8);
+    }
+}
+
+
 /* Center content */
 .home-content {
     text-align: center; /* Centers text, buttons, and icons */
