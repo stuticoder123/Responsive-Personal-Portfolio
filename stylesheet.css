@@ -1,3 +1,4 @@
+/* Universal Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Body Styling */
 body {
   color: #ededed;
-  height: 100%;  /* Ensure body takes up full height */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  height: 100%;
+  overflow-x: hidden;
 }
 
+/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -25,15 +28,14 @@ body {
 }
 
 .logo {
-  position: relative;
   font-size: 25px;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
 
+/* Navbar */
 .navbar a {
-  display: inline-block;
   font-size: 25px;
   color: #fff;
   text-decoration: none;
@@ -46,174 +48,140 @@ body {
   color: #0ef;
 }
 
+/* Home Section */
 .home {
   position: relative;
   width: 100%;
-  justify-content: space-between;
-  min-height: 100vh; /* Allow for content overflow */
+  min-height: 100vh;
   background-color: rgb(2, 2, 62);
-  background-position: center;
   display: flex;
   align-items: center;
-  padding: 140px 10% 0; /* Add top padding to avoid header overlap */
+  justify-content: center;
+  padding: 140px 10% 0;
+  flex-direction: column;
 }
 
+/* Home Content */
 .home-content {
-  max-width:600px;
-  flex: 1; /* Makes the content section take up available space */
-  padding-right: 20px;
+  text-align: center;
 }
 
 .home-content h1 {
-  font-size:72px;
-  font:cursive; /* Apply the desired font styles */
-  color: white; /* Lighter cyan color (optional) */
-  text-align: center; /* Center the text */
-  margin-bottom: 20px; /* Add some spacing below */
+  font-size: 72px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .home-content h3 {
-  font-size: 32px; /* font size */
-  font-weight: 200; /* Use a normal font weight */
-  color: #66f2ff; /* Lighter cyan color */
-  letter-spacing: 0.5px; /* Add slight spacing between letters */
-  font-family: 'Dancing Script', cursive; /* Use a cursive font for a handwritten effect */
-  text-align: center; /* Center the text */
-  margin-bottom: 50px; /* Add some spacing below */
+  font-size: 32px;
+  color: #66f2ff;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .home-content p {
-  font-size: 15px; /* Adjusted for readability */
-  font-weight: 400; /* Normal weight for a softer look */
-  color: #d9f9ff; /* Even lighter shade of cyan blue */
-  font-family: 'Dancing Script', cursive; /* Cursive font style */
-  text-align: center; /* Center the text */
-  line-height: 1.6; /* Improve readability */
-  margin-top: 10px; /* Add some spacing from the element above */
+  font-size: 15px;
+  color: #d9f9ff;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
+/* Circular Image with Animation */
 .home-image {
-  flex: 1; /* Makes the image section take up available space */
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(25px); /* Shift the image 25px to the right */
-  filter: drop-shadow(250px 250px 245px rgba(30, 30, 92, 0.8)); /* Soft shadow effect */
+  position: relative;
 }
 
 .home-image img {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 450px; /* Limit the maximum width */
-  height: auto; /* Allow the height to auto adjust */
-  aspect-ratio: 1; /* Ensure the aspect ratio is 1:1 (square) */
-  border-radius: 50%; /* Make the image circular */
-  border: 10px solid white; /* Border around the image */
-  outline: 10px solid #0ef; /* Outline around the image */
-  box-shadow: 1px 1px 2px white; /* Shadow effect around the image */
-  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  width: 80%;
+  max-width: 450px;
+  border-radius: 50%;
+  border: 10px solid white;
+  outline: 10px solid #0ef;
+  box-shadow: 0 0 30px rgba(50, 50, 112, 1);
+  animation: pulse-shadow 1.5s infinite alternate ease-in-out;
 }
 
-/* Image container with animation */
-.home-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(25px); /* Moves image slightly to the right */
-    position: relative;
-}
-
-/* Circular image with border and animated shadow */
-.home-image img {
-    width: 80%; /* Adjust width */
-    max-width: 450px; /* Limit max width */
-    border-radius: 50%;
-    border: 10px solid white;
-    outline: 10px solid #0ef;
-    box-shadow: 0 0 25px rgba(50, 50, 112, 0.8); /* Stronger shadow for visibility */
-    animation: pulse-shadow 1.5s infinite ease-in-out; /* Pulsating animation */
-}
-
-/* Pulsating Animation */
+/* Animation */
 @keyframes pulse-shadow {
-    0% {
-        box-shadow: 0 0 25px rgba(50, 50, 112, 0.8);
-    }
-    50% {
-        box-shadow: 0 0 40px rgba(50, 50, 112, 1); /* Shadow expands */
-    }
-    100% {
-        box-shadow: 0 0 25px rgba(50, 50, 112, 0.8);
-    }
+  0% {
+    box-shadow: 0 0 30px rgba(50, 50, 112, 1), 0 0 50px rgba(50, 50, 112, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(50, 50, 112, 1), 0 0 70px rgba(50, 50, 112, 1);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(50, 50, 112, 1), 0 0 50px rgba(50, 50, 112, 0.8);
+  }
 }
 
-
-/* Center content */
-.home-content {
-    text-align: center; /* Centers text, buttons, and icons */
-}
-
-/* Center the buttons */
+/* Center Buttons */
 .home-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Aligns buttons in the center */
-    gap: 20px; /* Adds spacing between buttons */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Button styles */
+/* Button Styles */
 .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: #0ef;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #0ef;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background: #00c4cc;
+  background: #00c4cc;
 }
 
 .hire {
-    background: #ff4d4d;
+  background: #ff4d4d;
 }
 
 .hire:hover {
-    background: #ff1a1a;
+  background: #ff1a1a;
 }
 
 /* Social Media Icons - Centered & Visible */
 .home-sci {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; /* Center icons horizontally */
-    gap: 15px; /* Space between icons */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 /* Style for social media links */
 .home-sci a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px; /* Bigger icon size */
-    width: 60px;
-    height: 60px;
-    color: white; /* Icon color */
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.2); /* Light background */
-    border-radius: 50%; /* Circular shape */
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Soft glow effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Icon hover effect */
+/* Icon Hover Effect */
 .home-sci a:hover {
-    background: #0ef;
-    color: black;
-    box-shadow: 0 0 15px #0ef; /* Stronger glow on hover */
+  background: #0ef;
+  color: black;
+  box-shadow: 0 0 15px #0ef;
 }
-
