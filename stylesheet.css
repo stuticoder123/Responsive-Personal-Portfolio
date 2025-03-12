@@ -60,3 +60,15 @@ z-index : 100;
   font-size: 1.2rem;
   line-height: 1.5;
 }
+.home-image {
+  flex: 1; /* Takes available space */
+  display: flex;
+  justify-content: center;
+}
+.home-image img {
+  width: 300px; /* Adjust size as needed */
+  height: 300px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures image fits well */
+  border: 5px solid white; /* Optional: Adds a white border */
+}
