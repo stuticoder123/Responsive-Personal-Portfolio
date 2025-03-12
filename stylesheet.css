@@ -151,28 +151,28 @@ body {
     background: #ff1a1a;
 }
 
-/* Social Media Icons - Centered & More Visible */
+/* Social Media Icons - Centered & Visible */
 .home-sci {
     margin-top: 30px;
     display: flex;
-    justify-content: center; /* Aligns icons in the center */
-    gap: 15px; /* Adds spacing between icons */
+    justify-content: center; /* Center icons horizontally */
+    gap: 15px; /* Space between icons */
 }
 
-/* Style for social icons */
+/* Style for social media links */
 .home-sci a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px; /* Increases icon size */
-    width: 55px; /* Bigger container */
-    height: 55px;
+    font-size: 30px; /* Bigger icon size */
+    width: 60px;
+    height: 60px;
     color: white; /* Icon color */
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.3); /* Slightly brighter background */
-    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2); /* Light background */
+    border-radius: 50%; /* Circular shape */
     transition: 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Soft glow effect */
 }
 
 /* Icon hover effect */
@@ -181,3 +181,4 @@ body {
     color: black;
     box-shadow: 0 0 15px #0ef; /* Stronger glow on hover */
 }
+
